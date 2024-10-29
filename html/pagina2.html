@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Memorables de Deadpool</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+<body>
+    <script>
+        titulo = crearNodoConTexto("h1","Frases Memorables de Deadpool")
+        p = crearNodoConTexto("p","Deadpool es conocido por su ingenio rapido y su sentido del humor unico.Aqui hay algunas de sus frases mas memorables:")
+        subTitulo = crearNodoConTexto("h2","Citas Famosas")
+        ul = crearNodo("ul")
+        blockquote = crearNodo("blockquote")
+        citaUno = crearNodoConTexto("li",'"Maximum effort!"')
+        textCita2 = "I'm about to do to you what Limp Bizkit did to music in the late '90s."
+        citaDos = crearNodoConTexto("li",`"${textCita2}"`)
+        textCita3 = "You're probality thinking, 'This was a superhero movie but that guy in the siut just turned that other guy into a kebab'"
+        citaTres = crearNodoConTexto("li",`"${textCita3}"`)
+
+        adicionarNodoContenedor(citaUno,blockquote)
+        adicionarNodoContenedor(citaDos,blockquote)
+        adicionarNodoContenedor(citaTres,blockquote)
+        adicionarNodoContenedor(blockquote,ul)
+
+        mensaje = crearNodo("p")
+        nota = crearNodoConTexto("strong","Nota: ")
+        mensajeTexto = document.createTextNode("Cada una se las fraces captura perfectamente el espiritu sarcastico y subversivo de Deadpool.")
+        adicionarNodoContenedor(nota,mensaje)
+        adicionarNodoContenedor(mensajeTexto,mensaje)
+        tituloFinal = crearNodoConTexto("h3","Video de las Mejores Escenas")
+
+
+
+
+        adicionarNodoBody(titulo)
+        adicionarNodoBody(p)
+        adicionarNodoBody(subTitulo)
+        adicionarNodoBody(ul)
+        adicionarNodoBody(mensaje)
+        adicionarNodoBody(tituloFinal)
+        video = crearVideo("../recursos/videos/videoplayback.mp4","Prueba script","../recursos/image/099822.webp","360","639")
+
+    </script>
+</body>
+</html>

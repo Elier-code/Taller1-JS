@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Principales</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+<body>
+    <script>
+        titulo = crearNodoConTexto("h1","Personajes Principales de Deadpool")
+        subTitulo1 = crearNodoConTexto("h2","Deadpool (Wade Wilson)")
+        parrafo1 = crearNodo("p")
+        text1Parrado1 = document.createTextNode("Deadpool, Tambien conocido como ")
+        text2Parrado1 = document.createTextNode(", es un anti-heroe de Marvel conocido por su humor sarcastico y sus habilidades de combate.")
+        nombre1 = crearNodoConTexto("strong","Wade Wilson")
+        parrafo1.appendChild(text1Parrado1)
+        parrafo1.appendChild(nombre1)
+        parrafo1.appendChild(text2Parrado1)
+        subTitulo2 = crearNodoConTexto("h3","Vanessa")
+
+        parrafo2 = crearNodo("p")
+        nombre2 = crearNodoConTexto("em","Vanessa Carlysle")
+        textParrado2 = document.createTextNode(" es la novia de Wade Wilson. es una figura clave en la vida de Deadpool y su motivacion principal en la historia.")
+        parrafo2.appendChild(nombre2)
+        parrafo2.appendChild(textParrado2)
+
+        subTitulo3 = crearNodoConTexto("h3","Colossus")
+        parrafo3 = crearNodo("p")
+        nombre3 = crearAbreviacion("Piotr Nikolaievitch Rasputin","Coloso")
+        text1Parrado3 = document.createTextNode("Colossus, tambien conocido como ")
+        text2Parrado3 = document.createTextNode(",es un miembro de los X-Men que intente guiar a Deadpool hacia un camino mas heroico.")
+        parrafo3.appendChild(text1Parrado3)
+        parrafo3.appendChild(nombre3)
+        parrafo3.appendChild(text2Parrado3)
+
+        parrafo4 = crearNodoConTexto("p","Estos son solo algunos de los personajes memorables de la pelicula ")
+        nombre4 = crearNodoConTexto("em","Deadpool")
+        parrafo4.appendChild(nombre4)
+
+
+
+
+
+        adicionarNodoBody(titulo)
+        adicionarNodoBody(subTitulo1)
+        adicionarNodoBody(parrafo1)
+        imagen1 = crearImagen ("../recursos/image/imagen1.jpg","Imagen del trailer de la pelicula Deadpool and Wolwerine","300","170")
+        adicionarNodoBody(subTitulo2)
+        adicionarNodoBody(parrafo2)
+        imagen2 = crearImagen ("../recursos/image/imagen2.jpg","Ryan Reynolds posando con el traje de Deadpool","300","200")
+        adicionarNodoBody(subTitulo3)
+        adicionarNodoBody(parrafo3)
+        imagen3 = crearImagen ("../recursos/image/imagen3.webp","Imagen de coloso farchero","226","360")
+        adicionarNodoBody(parrafo4)
+    </script>
+</body>
+</html>
