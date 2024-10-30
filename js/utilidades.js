@@ -15,13 +15,13 @@ function crearAbreviacion(titulo,texto){
     return abbr
 }
 
-function crearNodoEnlace(nodo,texto,rutaEnlase,target){
-    var nodo = crearNodo(nodo)
+function crearNodoEnlace(texto,rutaEnlase,target){
+    var enlase = crearNodo("a")
     var nodoTexto = document.createTextNode(texto)
-    nodo.href = rutaEnlase
-    nodo.target = target
-    nodo.appendChild(nodoTexto)
-    return nodo
+    enlase.href = rutaEnlase
+    enlase.target = target
+    enlase.appendChild(nodoTexto)
+    return enlase
 }
 function crearImagen(rutaImagen,textoAlt,ancho,alto){
     var nodoImgen = crearNodo("img")
